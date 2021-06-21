@@ -63,7 +63,7 @@ second you must install all the dependencies to run this pakage :
 	$ sudo apt-get install ros-melodic-ros-controllers ros-melodic-ros-control
    ```
    
-   **In tow last commands i have problem with it, its dont't run and the soluation was run this command first to update : **
+   **In two last commands i have problem with it, its dont't run and the soluation was run this command first to update :**
    
    `sudo apt update`
    
