@@ -1,5 +1,5 @@
-# Install ROS and run robot arm pakage
-Fisrt we need to insatll ROS in ubuntu which this robot arm pakage tesetd in ROS meldoic and Ubuntu 18.04 .  
+# Install ROS and run robot arm package
+Fisrt we need to insatll ROS in ubuntu which this robot arm package tesetd in ROS meldoic and Ubuntu 18.04 .  
 ## Dependencies
  after configuration your Ubuntu, run this in terminal to accept the software from ros.org   
 
@@ -39,7 +39,7 @@ and
 source /opt/ros/melodic/setup.bash
 ``` 
 
-**Now, ROS is installed. but to install tools for building ROS pakages run :**
+**Now, ROS is installed. but to install tools for building ROS packages run :**
 
 ``` 
 sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
@@ -58,7 +58,7 @@ sudo rosdep init
 rosdep update
 ```
 
-# Install and run robot arm pakage in ros
+# Install and run robot arm package in ros
 
 first Installing the package arduino_robot_arm by add rduino_robot_arm in src file :  
 ```
@@ -66,7 +66,7 @@ first Installing the package arduino_robot_arm by add rduino_robot_arm in src fi
  $ sudo apt install git
  $ git clone https://github.com/smart-methods/arduino_robot_arm 
 ```
-second you must install all the dependencies to run this pakage :
+second you must install all the dependencies to run this package :
 	
   ```
     $ cd ~/catkin_ws
@@ -89,7 +89,7 @@ second you must install all the dependencies to run this pakage :
    $ catkin_make
    ``` 
    
-  **Now the pakage is installed , to run robot arm pakage by Rviz, run :**
+  **Now the pakage is installed , to run robot arm package by Rviz, run :**
    
    ```
    $ roslaunch robot_arm_pkg check_motors.launch
