@@ -80,7 +80,7 @@ second you must install all the dependencies to run this pakage :
    **In the two last commands, I have a problem with it, its don't run and the solution was to run this command first to update :**
    
    ```
-   sudo apt update
+   $ sudo apt update
    ``` 
    
    and compile the package :
@@ -92,17 +92,17 @@ second you must install all the dependencies to run this pakage :
   **Now the pakage is installed , to run robot arm pakage by Rviz, run :**
    
    ```
-   roslaunch robot_arm_pkg check_motors.launch
+   $ roslaunch robot_arm_pkg check_motors.launch
    ```
  <image src = "https://github.com/betoolhamad/Install-and-run-robot-arm-in-ros/blob/main/Rviz.gif" width="500" />
   
    
    and to run robot arm by gazebo, run :
    
-    ```
-    $roslaunch robot_arm_pkg check_motors_gazebo.launch 
-    
-    ``` 
+    $ roslaunch robot_arm_pkg check_motors_gazebo.launch ``` 
+     
+  
+   
     
     
 <image src = "https://github.com/betoolhamad/Install-and-run-robot-arm-in-ros/blob/main/gazebo-arm.gif" width="500" />
@@ -120,7 +120,6 @@ second you must install all the dependencies to run this pakage :
    
    ```
    $ rosrun robot_arm_pkg joint_states_to_gazebo.py
-   
    ``` 
    
   **Also, I tried to run this package in the constructor (Robot Development studio) and it works very well.**
