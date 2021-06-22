@@ -3,20 +3,28 @@ Fisrt we need to insatll ROS in ubuntu which this robot arm pakage tesetd in ROS
 ## Dependencies
  after configuration your Ubuntu, run this in terminal to accept the software from ros.org   
 
-`sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'`    
+```
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+```    
 
 Then run   
 
-`curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -`
+```
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+```
 
 To install ROS, first you should make update of debian pakage :     
 
-`sudo apt update` 
+```
+sudo apt update
+``` 
 
 after that install ros Desktop-Full :  
 
 
-`sudo apt install ros-melodic-desktop-full`
+``` 
+sudo apt install ros-melodic-desktop-full
+``` 
 
 
 then enviroment setup step , run this command :
@@ -27,16 +35,22 @@ source ~/.bashrc
 ```
 and   
 
-`source /opt/ros/melodic/setup.bash`
+```
+source /opt/ros/melodic/setup.bash
+``` 
 
 **Now, ROS is installed. but to install tools for building ROS pakages run :**
 
-`sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential`. 
+``` 
+sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+```
 
 To use the tools of ROS, you need first to initialize rosdep, which is enable you to install the system requirments that require to run the ROS. 
 run install rosdep command   :  
 
-`sudo apt install python-rosdep`
+``` 
+sudo apt install python-rosdep
+``` 
 
 then initialize rosdep  :  
 ```
@@ -63,24 +77,37 @@ second you must install all the dependencies to run this pakage :
 	$ sudo apt-get install ros-melodic-ros-controllers ros-melodic-ros-control
    ```
    
-   **In two last commands i have problem with it, its dont't run and the soluation was run this command first to update :**
+   **In the two last commands, I have a problem with it, its don't run and the solution was to run this command first to update :**
    
-   `sudo apt update`
+   ```
+   sudo apt update
+   ``` 
    
    and compile the package :
   
-   `$ catkin_make`
+   ``` 
+   $ catkin_make
+   ``` 
    
   **Now the pakage is installed , to run robot arm pakage by Rviz, run :**
    
-   `roslaunch robot_arm_pkg check_motors.launch`
-   
+   ```
+   roslaunch robot_arm_pkg check_motors.launch
+   ```
+ <image src = "https://github.com/betoolhamad/Install-and-run-robot-arm-in-ros/blob/main/Rviz.gif" width="500" />
   
    
    and to run robot arm by gazebo, run :
    
-    `roslaunch robot_arm_pkg check_motors_gazebo.launch `
+    ```
+    $roslaunch robot_arm_pkg check_motors_gazebo.launch 
     
+    ``` 
+    
+    
+<image src = "https://github.com/betoolhamad/Install-and-run-robot-arm-in-ros/blob/main/gazebo-arm.gif" width="500" />
+
+
   
    **Now to control the arm by Rviz and gazebo at the same time we need to run the joint_state but may need first change the permitios :**
   
@@ -91,9 +118,15 @@ second you must install all the dependencies to run this pakage :
    
    Then run it :
    
-   `rosrun robot_arm_pkg joint_states_to_gazebo.py`
+   ```
+   $ rosrun robot_arm_pkg joint_states_to_gazebo.py
    
+   ``` 
+   
+  **Also, I tried to run this package in the constructor (Robot Development studio) and it works very well.**
   
+  <image src = "https://github.com/betoolhamad/Install-and-run-robot-arm-in-ros/blob/main/RDS.gif" width="500" />
+
 
 
 
