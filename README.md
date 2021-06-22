@@ -99,7 +99,9 @@ second you must install all the dependencies to run this package :
    
    and to run robot arm by gazebo, run :
    
-    $ roslaunch robot_arm_pkg check_motors_gazebo.launch ``` 
+   ``` 
+   $ roslaunch robot_arm_pkg check_motors_gazebo.launch
+   ``` 
      
   
    
@@ -120,6 +122,7 @@ second you must install all the dependencies to run this package :
    
    ```
    $ rosrun robot_arm_pkg joint_states_to_gazebo.py
+   
    ``` 
    
   **Also, I tried to run this package in the constructor (Robot Development studio) and it works very well.**
