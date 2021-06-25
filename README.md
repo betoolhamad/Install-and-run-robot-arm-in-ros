@@ -111,7 +111,7 @@ second you must install all the dependencies to run this package :
 
 
   
-   **Now to control the arm by Rviz and gazebo at the same time we need to run the joint_state but may need first change the permitios :**
+   **Now to control the arm by Rviz and gazebo at the same time we need to run the joint_state but may need first change the permission :**
   
    ```
    $ cd catkin_ws/src/arduino_robot_arm/robot_arm_pkg/scripts
